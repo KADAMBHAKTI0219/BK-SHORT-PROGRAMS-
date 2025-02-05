@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Formatter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="mainDiv">
+      <h2>Text Formatter</h2>
+      <textarea id="textInput"></textarea>
+      <div class="buttons">
+        <button onclick="formatText('bold')">Bold</button>
+        <button onclick="formatText('italic')">Italic</button>
+        <button onclick="formatText('underline')">Underline</button>
+        <button onclick="formatText('strike')">Strike</button>
+        <button onclick="increaseFontSize()">Increase Font</button>
+        <button onclick="decreaseFontSize()">Decrease Font</button>
+        <button onclick="capitializeText()">Capitalize</button>
+        <button onclick="lowerCaseText()">Lowercase</button>
+      </div>
+      <div id="formattedText"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

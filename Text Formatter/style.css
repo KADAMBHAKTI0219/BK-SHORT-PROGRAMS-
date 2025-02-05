@@ -1,0 +1,90 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: cursive;
+    box-sizing: border-box;
+}
+body{
+    background-color: #D6C0B3;
+}
+.mainDiv {
+    padding: 50px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f7f9fc; /* Light grayish-blue background */
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mainDiv:hover {
+    transform: translate(-50%, -50%) scale(1.02);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    font-size: 32px;
+    color: brown;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 300px;
+    height: 150px;
+    margin-bottom: 10px;
+    border: 2px solid #000;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 18px;
+    transition: box-shadow 0.3s ease, border 0.3s ease;
+}
+
+textarea:focus {
+    border: 2px solid #8B4513;
+    box-shadow: 0 0 8px #D2691E;
+    outline: none;
+}
+
+.buttons {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+button {
+    width: 45%;
+    margin: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    background: linear-gradient(45deg, #8B4513, #D2691E); /* Brown gradient */
+    border: none;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(45deg, #D2691E, #8B4513); /* Inverted gradient on hover */
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(45deg, #8B4513, #A0522D); /* Slightly darker for active state */
+}
+#formattedText{
+    margin-top: 20px;
+    font-size: 20px;
+}
