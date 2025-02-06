@@ -49,6 +49,7 @@ const QuotesApp = () => {
            <img src={el.image} alt={el.quote} height={200} width={200} className='quote-image'/>
           <h2 className='quote'>{el.quote}</h2>
           <h3 className='quote-author'>{el.author}</h3>
+          <h4>{el.whichQuote}</h4>
           <div className='buttons'>
           <button className='editButton'><Link to={`/edit/${el.id}`}>Edit</Link></button>
           <button onClick={()=>handleDelete(el.id)} className='deleteButton'>Delete</button>
