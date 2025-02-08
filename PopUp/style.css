@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.mainDiv {
+    width: 520px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: bisque;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.8s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.popup-head, .popup-body, .popup-footer {
+    width: 100%; }
+
+.popup-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1{
+        text-align: left;
+        padding: 0;
+    }
+}
+
+.popup-body {
+    font-size: 20px;
+    flex: 1; 
+}
+
+.popup-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.mainDiv {
+    transform: translate(-50%, -50%);
+}
+
+/* From Top */
+.mainDiv.show-top {
+    opacity: 1;
+    visibility: visible;
+    top: -100%;
+    transform: translate(-50%, -150%);
+}
+
+/* From Bottom */
+.mainDiv.show-bottom {
+    opacity: 1;
+    visibility: visible;
+    bottom: 100%;
+    transform: translate(-50%, 150%);
+}
+
+/* From Left */
+.mainDiv.show-left {
+    opacity: 1;
+    visibility: visible;
+    left: -100%;
+    transform: translate(50%, -50%);
+}
+
+/* From Right */
+.mainDiv.show-right {
+    opacity: 1;
+    visibility: visible;
+    right: -100%;
+    transform: translate(150%, -50%);
+}
+
+/* Center Position (Final State) */
+.mainDiv.show {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.popup-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popup-head h1 {
+    font-size: 24px;
+}
+
+.close {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.popup-body {
+    margin: 20px 0;
+}
+
+.popup-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.popup-footer button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.buttons{
+    width:50% ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin:10% auto;
+}
+h1{
+    width: 100%;
+    text-align: center;
+    padding: 50px;
+}
+
+#buttonPopup1 ,#buttonPopup2,#buttonPopup3,#buttonPopup4{
+    width: 45%;
+    height: 50px;
+    margin: 2%;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
