@@ -7,12 +7,20 @@ const App = () => {
 
   const generatePDF = () => {
     const doc = new jsPDF();
+    const pageWidth = doc.internal.pageSize.getWidth();
+    const margin = 20;
+    const maxWidth = pageWidth - margin * 2; 
+  
     doc.setFontSize(20);
-    doc.text(title, 20, 20);
+    doc.text(title, margin, 20);
+  
     doc.setFontSize(14);
-    doc.text(content, 20, 30);
+    const splitContent = doc.splitTextToSize(content, maxWidth);
+    doc.text(splitContent, margin, 40);
+  
     doc.save("generated.pdf");
   };
+  
 
   const styles = {
     container: {
