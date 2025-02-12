@@ -1,0 +1,25 @@
+{
+  "posts":
+  [
+    {
+      "id": 1,
+      "name": "Men's Sneakers",
+      "price": "$59.99",
+      "colors": [
+        {
+          "name": "Red",
+          "image": "https://s.alicdn.com/@sc04/kf/Hb1375ed6efdb4f1c8a4beee18de71523J.jpg_720x720q50.jpg"
+        },
+        {
+          "name": "Blue",
+          "image": "https://www.jiomart.com/images/product/original/rv73iylqpv/bruton-trendy-sports-shoes-for-men-blue-product-images-rv73iylqpv-0-202209021255.jpg?im=Resize=(500,630)"
+        },
+        {
+          "name": "Green",
+          "image": "https://www.saintg.in/cdn/shop/files/24_c5e973ad-e30a-48bc-9566-23e1d11b1609.jpg?v=1738667248&width=1080"
+        }
+      ]
+    }
+  ]
+  
+}
