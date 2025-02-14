@@ -1,0 +1,73 @@
+/* Enhanced CSS for Note App with Hover Effects and Background Variations */
+body {
+    margin: 0;
+    background:black;
+    font-family:cursive;
+  }
+  
+  .heading {
+    color: wheat;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 38px;
+    font-weight: bold;
+  }
+  
+  .info-text {
+    text-align: center;
+    color: #ef1e1e;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .app {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 320px);
+    gap: 30px;
+    justify-content: center;
+    padding: 50px;
+  }
+  
+  .note-wrapper {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  .note-wrapper:hover {
+    background-color: #ecf0f1;
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  }
+  
+  .note {
+    padding: 20px;
+    border-radius: 18px;
+    resize: none;
+    font-size: 18px;
+    height: 220px;
+    color: #2c3e50;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.9);
+    transition: background-color 0.3s ease;
+  }
+  
+  .note:hover {
+    background-color: #d1f2eb;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn {
+    height: 200px;
+    border-radius: 20px;
+    font-size: 65px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.4);
+    background: rgba(255, 255, 255, 0.5);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btn:hover {
+    background-color: #a2d9ce;
+    color: rgba(0, 0, 0, 0.7);
+    transform: scale(1.07);
+  }
+  
