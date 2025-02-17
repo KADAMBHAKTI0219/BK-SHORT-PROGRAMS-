@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  .bg-img1,.bg-img2,.bg-img3 {
+    width: 100%;
+    height: 100vh;
+    background: url("https://avatars.mds.yandex.net/i?id=7e8b38af9471c5c699b68039ed1ca27db72239ed-5297106-images-thumbs&n=13");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  .bg-img2{
+    background: url('https://i.ytimg.com/vi/IiQJCRfy0Q8/maxresdefault.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .bg-img3{
+    background:linear-gradient(rgba(1,1,1,0.3),rgba(1,1,1,0.5)) ,url('https://avatars.mds.yandex.net/i?id=e4f29d644fb4d942e1b75100744d3bc0e4169cfb-5639962-images-thumbs&n=13');
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  .container {
+    padding: 100px;
+  }
+  
+  h1 {
+    font-size: 50px;
+  }
+  p {
+    color: grey;
+  }
+  
+  @media (max-width: 500px) {
+    .container {
+      padding: 10px;
+    }
+  }
